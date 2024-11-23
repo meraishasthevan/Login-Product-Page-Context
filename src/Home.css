@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.home-backimg {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/home2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.home-container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFB400;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.home-top {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.link-home {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 100px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.link-home:hover {
+    background: #FFB400;
+    color: #333;
+    transform: scale(1.1);
+}
+
+.home-head {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.home-head h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.home-head h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #FFB400;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.home-btn {
+    background: #FFB400;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+    background: #FF9100;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-container h1 {
+        margin-bottom: 20px;
+    }
+
+    .home-top {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .link-home {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .home-head h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-head h2 {
+        font-size: 1.5rem;
+    }
+
+    .home-btn {
+        font-size: 1rem;
+        padding: 12px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-head h1 {
+        font-size: 2rem;
+    }
+
+    .home-head h2 {
+        font-size: 1.2rem;
+    }
+
+    .home-btn {
+        font-size: 0.9rem;
+        padding: 10px 25px;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
